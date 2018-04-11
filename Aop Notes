@@ -6,7 +6,6 @@ Keywords for AOP -
 Aspect, Advice, Pointcut, Proxy, Target obj, JointPoint
 
 Type of Proxy - 
-
 Spring AOP uses either JDK dynamic proxies or CGLIB to create the proxy for a given target object.
 If the target object to be proxied implements at least one interface then a JDK dynamic proxy will be used. All of the interfaces 
 implemented by the target type will be proxied. If the target object does not implement any interfaces then a CGLIB proxy will be created.
@@ -16,18 +15,19 @@ Points -
     ((CoreBusinessSubordinate) AopContext.currentProxy()).doSomethingSmall(4);
 2. We can create our own annotation and mark advice pointcut using this annotation.
 3. We can also get paramters, if one given in target method.
-4. We can change return obj in Around advice, while After Returning advice we can only manipulate actual obj
-5. 
+4. We can change return obj of target method in Around advice, while After Returning advice we can only manipulate actual obj
+5. We can access and handle thrown exception by target method in Around Advice, also can access same in After Throwing Advice, but can't
+   handle.
+6. How proxy works with spring?
+   https://www.youtube.com/watch?v=yiinKulgm4U
 
 Order of Aspect - 
-
 Order is undefined unless explicitly indicated (for instance, by using @Order)
 On the way in to a joinpoint, the advice with lowest Order value gets executed first.
 On the way out from the joinpoint, the advice with highest Order value gets executed first.
 Higher order closer to target method.
 
 Order of Advice - 
-
 In Around Before
 In Before 
 In Target method
@@ -36,6 +36,7 @@ In after
 In after returning
 
 Remaining Topics -
+What happened if we won't call pjp.proceed()?
 Implementation using xml
 Introduction and Advisors
 various types of pointcuts
