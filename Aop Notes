@@ -1,3 +1,9 @@
+Ways to achieve AOP used in Java - 
+Spring AOP - can only be applied on exection of methods
+AspectJ and other - Compartively vast, can apply at different jointpoint
+
+Keywords for AOP - 
+Aspect, Advice, Pointcut, Proxy, Target obj, JointPoint
 
 Type of Proxy - 
 
@@ -9,6 +15,9 @@ Points -
 1. The internal call from the target method to another target method escapes the aspect interceptor.
     ((CoreBusinessSubordinate) AopContext.currentProxy()).doSomethingSmall(4);
 2. We can create our own annotation and mark advice pointcut using this annotation.
+3. We can also get paramters, if one given in target method.
+4. We can change return obj in Around advice, while After Returning advice we can only manipulate actual obj
+5. 
 
 Order of Aspect - 
 
@@ -25,3 +34,9 @@ In Target method
 In Around After
 In after
 In after returning
+
+Remaining Topics -
+Implementation using xml
+Introduction and Advisors
+various types of pointcuts
+AspectJ
