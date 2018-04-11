@@ -39,6 +39,7 @@ Retention - when to discard annotation
 source - discard during compile tine like @override
 class(default) - discard during load time
 runtime - available to JVM
+
 Remaining Topics -
 What happened if we won't call pjp.proceed()?
 Implementation using xml
