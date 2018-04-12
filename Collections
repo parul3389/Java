@@ -1,0 +1,16 @@
+Collection and Map Interface, Map is not part of collection interface, but part of Collection Interface
+
+
+Set(I) - HashSet, TreeSet, LinkedHashSet, CopyOnWriteSet(C)
+List(I) - ArrayList, LinkedList, CopyOnWriteList(C)
+Queue(I) - PriotiyQueue, BlockingQueue(I) - PriorityBlockingQueue, ArrayBlockingQueue, LinkedBlockingQueue, DelayQueue, SynchronousQueue 
+Deque(I) - ArrayDeque, LinkedList, LinkedBlockingQueue(C)
+Map(I) - HashMap, TreeMap, LinkedHashMap, ConcurrentHashMap(C)
+
+fail-safe and fail-fast
+
+
+ListIterator - can move in both direction
+
+Collections method -
+sort, synchronizedSet, synchronizedMap, synchronizedList
