@@ -1,0 +1,31 @@
+Create Http call in java - 
+
+Class<T> returnObjectClass = new ParameterizedTypeReference<Map<Integer, List<AsOfDate>>>() {};
+Map<String, Object> map = 
+map.put("reportTag", reportTag.name());
+
+HttpHeaders requestHeaders=new HttpHeaders();
+requestHeaders.setContentType(MediaType.APPLICATION_JSON);
+HttpEntity<U> requestEntity = new HttpEntity<U>(requestBody, requestHeaders);
+ResponseEntity<T> response = restTemplate.exchange(buildServiceUrl(url), httpMethod, requestEntity, returnObjectClass, map);
+result = response.getBody();
+
+Handling Rest call
+@RestController
+public class PortfolioServicesController {
+
+	/** The portfolio services. */
+	@Autowired
+	private PortfolioServicesV3 portfolioServices;
+		
+	@RequestMapping(value = "/user/{email}/context", produces = "application/json", method = RequestMethod.POST)
+	@ResponseBody
+	public UserContext getUserContext(HttpServletResponse response, Principal principal, @RequestBody final Map<String, Object> extendedAttributes) throws IOException{
+		UserContext userContext = null;
+		try{
+			userContext = portfolioServices.getUserContext(principal, extendedAttributes);
+		} catch(Exception e){
+			exceptionHandler(e, response);
+		}
+		return userContext;
+	}
