@@ -1,0 +1,16 @@
+Using Java Reflection you can inspect Java classes at runtime.
+
+Class myObjectClass = MyObject.class
+Class class = Class.forName(className)
+if don't know class name at compile time, supply the fully qualified class name, if not exist throw ClassNotFoundException 
+
+Info -
+super class, package, methods, fields, constructor, interfaces
+
+aClass.getConstructor(new Class[]{String.class})
+NoSuchMethodException 
+
+getDeclaredField() - This method only returns fields declared in that particular class, not fields declared in any superclasses.
+privateStringField.setAccessible(true);
+
+Link - http://tutorials.jenkov.com/java-reflection/index.html
