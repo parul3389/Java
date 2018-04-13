@@ -8,10 +8,16 @@ Interfaces, Classes and their important methods -
 Set(I) - HashSet, TreeSet, LinkedHashSet, CopyOnWriteSet(C)
 List(I) - ArrayList, LinkedList, CopyOnWriteList(C) - indexOf, lastIndexOf
 Queue(I) - PriotiyQueue, BlockingQueue(I) - PriorityBlockingQueue, ArrayBlockingQueue, LinkedBlockingQueue, DelayQueue, SynchronousQueue 
-  - add, remove, element, poll, peek, offer, take put
+  - add, remove, element, poll, peek, offer, take, put
 Deque(I) - ArrayDeque, LinkedList, LinkedBlockingDeque(C) - addFirst, removeFirst, elementFirst, addLast, removeLast, elementLast, 
   pollFirst, peekFirst, elementFirst, pollLast, peekLast, elementLast
 Map(I) - HashMap, TreeMap, LinkedHashMap, ConcurrentHashMap(C) - get, put, entrySet, keySet, entrySet, putAll
+
+Concurrent methods like put, take throws checked Inerrupted exception, if get interruted while waiting; or throws NullPointerException 
+if try to insert null element.
+
+Always use right method like poll, pop to get element out of a queue, stack; don't just iterate over it to get a list of all elements, 
+otherwise will not be same.
 
 HashMap Working - 
 There are serveral hashing buckets. Out of which hashCode will be used to select bucket. And then equals method will be used to match key.
@@ -51,6 +57,8 @@ sort, synchronizedSet, synchronizedMap, synchronizedList
 Different way to synchronize map and which one is better and y?
 sychronized method, Collections.synchronizedMap and ConcurrentHashMap - first 2 are not designed for multithreading, so not a very fast
 way. While Concurrent is designed on segment for better performance.
+
+Stack - 
 
 Remaining Topics -
 internal implementation of concurrent collection's method 
