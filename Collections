@@ -1,16 +1,37 @@
-Collection and Map Interface, Map is not part of collection interface, but part of Collection Interface
+Collection and Map Interface, Map is not part of collection interface, because it has three collections: Keys, values and key-value pairs.
+But part of Collection Framework.
 
+Collection method -
+addAll, retainAll, removeAll, containsAll, size, clear, iterator, isEmpty, contains, toArray
 
+Interfaces, Classes and their important methods - 
 Set(I) - HashSet, TreeSet, LinkedHashSet, CopyOnWriteSet(C)
-List(I) - ArrayList, LinkedList, CopyOnWriteList(C)
-Queue(I) - PriotiyQueue, BlockingQueue(I) - PriorityBlockingQueue, ArrayBlockingQueue, LinkedBlockingQueue, DelayQueue, SynchronousQueue 
-Deque(I) - ArrayDeque, LinkedList, LinkedBlockingQueue(C)
-Map(I) - HashMap, TreeMap, LinkedHashMap, ConcurrentHashMap(C)
+List(I) - ArrayList, LinkedList, CopyOnWriteList(C) - indexOf, lastIndexOf
+Queue(I) - PriotiyQueue, BlockingQueue(I) - PriorityBlockingQueue, ArrayBlockingQueue, LinkedBlockingQueue, DelayQueue, SynchronousQueue  - add, remove, element, poll, peek, offer, take put
+Deque(I) - ArrayDeque, LinkedList, LinkedBlockingDeque(C) - addFirst, removeFirst, elementFirst, addLast, removeLast, elementLast, pollFirst, peekFirst, elementFirst, pollLast, peekLast, elementLast
+Map(I) - HashMap, TreeMap, LinkedHashMap, ConcurrentHashMap(C) - get, put, entrySet, keySet, entrySet, putAll
 
-fail-safe and fail-fast
+HashMap Working - 
+There are serveral hashing buckets. Out of which hashCode will be used to select bucket. And then equals method will be used to match key.
+Load Factor - if size of map extends Load Factor * capacity, it will be rehashed. Default .75
+Initial Capacity - Initail capacity of map. Default 16
 
+How ConcurrentHashMap works & how is different from - 
+Concurrency-Level - Defines the number which is an estimated number of concurrently updating threads. Default - 16
+Segments 
 
-ListIterator - can move in both direction
+fail-safe and fail-fast Iterators - 
+1. Fail-safe iterators allow modifications of a collection while iterating over it and don't throw ConcurrentModification exception. 
+2. They use copy of original collection to traverse over the elements of the collection. 
+3. Required extra space and memory for clonning
+4. ex. ConcurrentHashMap, CopyOnWriteArrayList
+
+Diffences between  -
+
+ListIterator - can move in both direction - hasPrevious, previous
 
 Collections method -
 sort, synchronizedSet, synchronizedMap, synchronizedList
+
+Different way to synchronize map and which one is better and y?
+
