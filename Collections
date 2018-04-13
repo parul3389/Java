@@ -31,6 +31,13 @@ fail-safe and fail-fast Iterators -
 3. Required extra space and memory for clonning
 4. ex. ConcurrentHashMap, CopyOnWriteArrayList
 
+TreeSet and TreeMap use Comparable and Comparator to arrange objects.
+PriorityQueue also uses Comparable and Comparator to get object priority.
+Set and Map uses hashcode equals method to compare object and key.
+
+TreeSet<A>, implements comparable, override hashcode method, Can have 2 same objects?
+Yes, because it didn't implemented equals method.
+
 Diffences between  -
 ArrayList and LinkedList and Vector
 HashTable and HashMap
@@ -44,3 +51,6 @@ sort, synchronizedSet, synchronizedMap, synchronizedList
 Different way to synchronize map and which one is better and y?
 sychronized method, Collections.synchronizedMap and ConcurrentHashMap - first 2 are not designed for multithreading, so not a very fast
 way. While Concurrent is designed on segment for better performance.
+
+Remaining Topics -
+internal implementation of concurrent collection's method 
