@@ -11,6 +11,7 @@ Queue(I) - PriotiyQueue, BlockingQueue(I) - PriorityBlockingQueue, ArrayBlocking
   - add, remove, element, poll, peek, offer, take, put
 Deque(I) - ArrayDeque, LinkedList, LinkedBlockingDeque(C) - addFirst, removeFirst, elementFirst, addLast, removeLast, elementLast, 
   pollFirst, peekFirst, elementFirst, pollLast, peekLast, elementLast
+List(I) - Stack - push, pop, peek  
 Map(I) - HashMap, TreeMap, LinkedHashMap, ConcurrentHashMap(C) - get, put, entrySet, keySet, entrySet, putAll
 
 Concurrent methods like put, take throws checked Inerrupted exception, if get interruted while waiting; or throws NullPointerException 
@@ -57,8 +58,6 @@ sort, synchronizedSet, synchronizedMap, synchronizedList
 Different way to synchronize map and which one is better and y?
 sychronized method, Collections.synchronizedMap and ConcurrentHashMap - first 2 are not designed for multithreading, so not a very fast
 way. While Concurrent is designed on segment for better performance.
-
-Stack - 
 
 Remaining Topics -
 internal implementation of concurrent collection's method 
