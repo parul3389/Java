@@ -7,8 +7,10 @@ addAll, retainAll, removeAll, containsAll, size, clear, iterator, isEmpty, conta
 Interfaces, Classes and their important methods - 
 Set(I) - HashSet, TreeSet, LinkedHashSet, CopyOnWriteSet(C)
 List(I) - ArrayList, LinkedList, CopyOnWriteList(C) - indexOf, lastIndexOf
-Queue(I) - PriotiyQueue, BlockingQueue(I) - PriorityBlockingQueue, ArrayBlockingQueue, LinkedBlockingQueue, DelayQueue, SynchronousQueue  - add, remove, element, poll, peek, offer, take put
-Deque(I) - ArrayDeque, LinkedList, LinkedBlockingDeque(C) - addFirst, removeFirst, elementFirst, addLast, removeLast, elementLast, pollFirst, peekFirst, elementFirst, pollLast, peekLast, elementLast
+Queue(I) - PriotiyQueue, BlockingQueue(I) - PriorityBlockingQueue, ArrayBlockingQueue, LinkedBlockingQueue, DelayQueue, SynchronousQueue 
+  - add, remove, element, poll, peek, offer, take put
+Deque(I) - ArrayDeque, LinkedList, LinkedBlockingDeque(C) - addFirst, removeFirst, elementFirst, addLast, removeLast, elementLast, 
+  pollFirst, peekFirst, elementFirst, pollLast, peekLast, elementLast
 Map(I) - HashMap, TreeMap, LinkedHashMap, ConcurrentHashMap(C) - get, put, entrySet, keySet, entrySet, putAll
 
 HashMap Working - 
@@ -16,9 +18,12 @@ There are serveral hashing buckets. Out of which hashCode will be used to select
 Load Factor - if size of map extends Load Factor * capacity, it will be rehashed. Default .75
 Initial Capacity - Initail capacity of map. Default 16
 
-How ConcurrentHashMap works & how is different from - 
+How ConcurrentHashMap works & how is different from HashMap - 
 Concurrency-Level - Defines the number which is an estimated number of concurrently updating threads. Default - 16
-Segments 
+ConcurrentHashMap provides better Performance by replacing the Hashtable's map wide lock to Segment level lock.
+Two Thread - can read from same and different segment parallelly, can write in write in different segment, but not in same segment.
+ConcurrentHashMap(200, .75f, 10) - means 10 pairs capacity in each segment.
+For more - http://javabypatel.blogspot.in/2016/09/concurrenthashmap-interview-questions.html
 
 fail-safe and fail-fast Iterators - 
 1. Fail-safe iterators allow modifications of a collection while iterating over it and don't throw ConcurrentModification exception. 
@@ -27,6 +32,9 @@ fail-safe and fail-fast Iterators -
 4. ex. ConcurrentHashMap, CopyOnWriteArrayList
 
 Diffences between  -
+ArrayList and LinkedList and Vector
+HashTable and HashMap
+Set and List
 
 ListIterator - can move in both direction - hasPrevious, previous
 
@@ -34,4 +42,5 @@ Collections method -
 sort, synchronizedSet, synchronizedMap, synchronizedList
 
 Different way to synchronize map and which one is better and y?
-
+sychronized method, Collections.synchronizedMap and ConcurrentHashMap - first 2 are not designed for multithreading, so not a very fast
+way. While Concurrent is designed on segment for better performance.
