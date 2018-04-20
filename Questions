@@ -95,6 +95,51 @@ Aitel – Programming
 1.	Write a task pool implementation.
 Mahindra Comviva
 
+Round 1
+1. Vending Machine Prog
+2. Can we throw a error in constructor? If yes, what happened.
+3. Did memory get allocated for that item?
+4. If exception is on line no. 10. Will obj be initialize? How much?
+5. Implement LRU(Least Recent Used) cache.
+6. Exxpalin and Implement HashMap
+7. For list of +ve no., give 2 no. for which sum is equal to given value, complexity
+8. For list of +ve & -ve no.,give 2 no. with max product, complexity
+9. Differnce bw @component & @Bean
+10. Difference between Controller and RestController
+11. How to print a Hello message on browser using spring. Expain complete steps.
+12. How a request genreated from a browser get serverd by app server
+
+Round 2
+Expain AOP. How to call a AOP in mid of a method
+Implement ThreadPool
+2 methods - synchronized static
+2 methods - synchronized non-static
+How can 2 diff thread access these at same time
+write equals and hashCode method of a employee class (Hint : in HashCode -> name.hashcode())
+Did spring class override
+Expain Comaprable and Comparator
+Y cann't we use primitive in collection?
+Difference between DataAbstraction and DataEncapsulation
+What is Data Hiding?
+class A{
+}
+
+
+Java memory management
+Y create object in young generation memory
+How to create a immutable class
+Usage of immutable class?
+y out of memory occured?
+
+
+
+
+where static var get memory?
+how is linkedHashSet is implemented?
+Difference b/w HashTable and ConcurrentHashMap
+
+
+Can you impelment a linklist
 
 
 
