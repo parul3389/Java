@@ -1,0 +1,277 @@
+1.	IBM
+Technical round - 
+Ur current position in project
+Did u documented for ur project? – Need to know ideal documentation and diagrams 
+Architecture of my current project – I took long time to understand question
+Scale urself in java – I scaled 8
+Static class – finally – finalize – final block – missed whole concept
+JavaBean - ??
+Garbage collection
+String immutable
+Know javascript ?
+Know AJAX ?
+Exception Handling
+Level of logs – info, error, warn, debug
+QueryString
+MR round – 
+Tell me about ur project – I wz not prepared
+Current CTC – 4.6      Expected CTC – 7
+Y all of sudden need of dis hike – idiotic answer 
+I cn give only 5.5
+Feedback - high expectation & need to work with communication
+
+
+2. Solveda Interview - 10/10/2014 - telephonic
+ 1. Introduce urself
+ 2. Tell me about ur project
+ 3. Features of Java 7 & 8
+ 4. Abstraction & Inheritence
+ 5. Session Mgmt
+ 6. String, String Buffer, String Builder & situation shud use
+ 7. String Utils
+ 8. Ex.
+ 9. Difference b/w Array & ArrayList
+ 10. Difference b/w group by & where
+ 11. How cn we delete duplicate values frm DB
+ 12. Worked with Web Server??
+ 13. Difference b/w Web Server & App server
+ 14. How to create connection wid different DB using Session Factory parallely
+ 15. Type URL – process dis request
+ 16. Usage of Generic
+ 17. Difference b/w Statement and Callable statement
+
+
+JSON is stand for JavaScript Object Notation uses for data-interchange, lanuage independent, contains name, value pair  
+toJson, from Json
+Request Mapper & Resposnse Mapper automatically performs this Conversion.
+ 
+3. DIMTS  - 15/10/2014- telephonic
+
+ 1. Brief intro
+ 2. Abt ur project
+ 3. how r u uploading file
+ 4. How JS sends/ recieve data frm Spring Controller
+ 5. how Hibernate will handle transaction aborted in mid except transaction.rollback()
+ 6. How r u using hibernate in your application
+ 7. Handling authentication n authorization
+ 8. How Jasper report works
+ 9. Dont wnt to have any query in my jasper report, Way to do same
+ 10. Cross Tab etc layout in Jasper report
+
+4th Interview - CSC - Super Bad -telephonic
+
+1. Brief intro - u n proj
+2. What are Spring dependencies?
+3. JSF life cycle
+4. Difference between action and action Listener
+5. their syntaxes
+6. Difference b/w validator and converter
+7. which will perform first, if both implemented at same object, n y??
+8. Serialization in java
+9. Can I serialize a static field
+10. after de-serialization wht will b d output of serial value?
+11. finalize() ?
+12. How to implement dictionary in java?
+
+5th Interview – NewGen – F2F – 1st Nov, 2015
+
+1. OOPs concepts n explain all
+2. Give me example of each within this room.
+3. Create 2 class – constructor, data hiding, overloading, overriding concepts
+4. ArrayList or Linked List – which is better  1. if large no. of insertion required, 2. Search Better
+5. Final, finally, finalizer
+6. Serialization, volatile, transient
+7. String var. is immutable. Y??
+8. Top 3rd Salary holder - Query
+9. DB- Trigger, Left Outer join, right outer join, inner join, full outer join
+
+6. Aricent – Resume not accepted -8th Nov, 2015
+
+7. Accenture
+
+8. Ernst & Young – F2F – 15th nov, 2015
+ 1. Explain OOPs principal
+ 2. Whts Polymorphism
+ 3. Cn we hv 2 methods wid same declaration, but 1 wid static keyword
+ 4. Object class methods??
+ 5. contract b/w hashcode n equals, is it valid vice verse?
+ 6. MVC component in spring framework??
+ 7. wht application.xml do??
+ 8. wht is dependency injection??
+ 9. bean life cycle
+ 10. difference b/w arraylist and linked list
+ 11. difference b/w include directive n action
+ 12. Enum
+ 13. Create Singleton class
+ 14. she wrote simple example of inheritance, n asked ref of sub class cnt hold obj of super class
+ 15. how to mk a class as immutable
+ 16. Diff b/w String, StringBuffer, String Builder
+ 17. How to create a ArrayList synchronize – Collections.synchronizedList()
+ 18. Diff b/w Runnable n Callable interface
+ 19. Can we overload init n destroy method in spring
+
+9. Inteligrape – 10th Nov, 2015 – F2F
+Written -
+find factors of a no.
+find factorial using recursion
+check no. is multiple of 7 or not like – 49, 343
+Need to sum only even digit of a no.
+DB table, column n relation under define condition
+Interview -
+ 1. xplain OOPs principal
+ 2. Whts abstraction?
+ 3. she wrote simple example of inheritance, n asked ref of sub class cnt hold obj of super class
+ 4. How we can count of a word frequency in word cloud
+ 5. how cn we flatten a array dat cn hv any type of obj and nth dimensional array
+[1,5, “Hello”,[3,2,7],[2,5,[6,8]]]
+ 6. ACID property – explain each
+ 7. consistency – if same record is in diff table, data for it should b same in all tables
+ 8. why we use normalization?
+ 9. Wht is BOYC Codd
+ 10. wht is Index? How it implement internally
+ 11. request type – 4 (Get,post)
+ 12. wnt to upload a photo, which type of request will u use to perform this task? N y?
+ 
+10. Xebia - 
+
+ 1. Live example of singleton – Log4j, enum
+ 2. Write a singleton class
+ 3. Code coverage tools
+ 4. tools for testing
+ 5. Working of hashMap, internal type Cast(AutoBoxing)
+ 6. Wht is Collection? Wht its hierarchy? Why Map is not a part of collection
+ 7. Reason to create Set, Why can we insert only single copy, Similar to which mathematical function
+ 8. String Pool, Why we use String Pool??
+ 9. Password we shud store in char[] or String
+ 10. Can we hv multiple catch? Can we hv multiple finally? Order shud follow in catch? Ex.
+Catching RunTimeException n IOException after dat
+ 11. Dependency Injection
+ 12. Flow of control in spring
+ 13. How r u connecting hibernate in spring
+14. Default spring bean scope - singleton
+
+2nd round - 
+Sales tax calculator – apply oops principle and design patterns
+
+11. Deloitte. – F2F - 17th Jan, 2015
+what is hashcode?
+difference between equals and == operator
+what is pre compiled statements
+return statement in try, catch and finally block - which 1 will execute
+Sort a list of Student, on the basis of Marks and then Age.. Program
+does view take space in memory? Need of view?
+Create a view..
+
+12. Persistence – telephonic - 22nd Jan, 2015
+features of java
+what is annotations? For whom it is useful?
+difference between hashMap and hashTable - apart from synchronize
+difference between arraylist and vector
+Collection framework
+Difference b/w arraylist and array
+What is spring dependency injection
+What is concurrent Hash map?
+need to override hashcode method
+if an exception occurs in finally block- yes we can, but will hide error thrown/value return from try/ catch block, that y its a bad practice to return a value/ throw error from finally block, as it swallowed/overrides the actual exception/ returned value.
+can we throw Error??
+catch(Throwable e) allowed??
+What is string literal pool?
+is String thread safe?
+How to synchronize an arraylist?
+Hierarchy of throwable
+How to create thread? Which 1 better option?? Y?? Not bookish reason u know..
+13. iBtech – 31 Jan, 2015 – F2F
+Java written – 
+A multi choice question ppr and a case study qstn
+1st interview- 
+	Difference b/w Order by(order of insertion) and group by
+OOPs principles
+What is difference between encapsulation and abstraction?
+How encapsulation within the class is different from encapsulation in method?
+What is runtime polymorphism?
+Top 2nd salary?
+What is innerBean?
+How will you count no. of persons access  the website?
+What is scriptlet?
+2nd interview – 
+Explain components in your project. Ie architecture (as in WS, AS, DS, Risk management, development server, UAT, SIT server, Production env.)
+Thr is a page that was working f9 previously, but now it’s very slow, wht can b a possible reason for the situation?
+May b unable to connect to server due to network problem
+May b data is huge and thr is no indexing/partitioning present
+May b RAM is full, so we can kill unnecessary procedures
+May b disk size is full bcoz of bulky data
+Security of your application – tool we are using for security Checkmax
+Using https in place of http. Wht changes we should do to serve https??
+SQL injections – we use stored procedure
+Cross browser…
+Proper Exception handling - Nested   
+Possible ways of sorting and which 1 is best and y?
+How indexing works? Which data structure indexing use to store? 
+Difference between WS and AS? AS provides extra functionality for better development like connection pool, thread pool n all…
+3rd interview - 
+ Tell me about yourself?
+What is QA? What is focus of IQA and EQA? How EQA is more beneficial on IQA?
+Security of application – 5points
+Reason of change
+New technology and domain knowledge
+Client exposure
+Weakness/ Strength
+Specific domain/technology looking for – show ur flexibility
+Prefer to work in team/ alone – say team
+Hobbies?
+Plan for marriage
+Comfortable for client call 9-11PM? Ask for flexible working hours
+Do you know about ibtech?
+Ask them about project and domain, they will offer.
+
+14. NewGen – 2Feb, 2015 – F2F
+Written 
+1st interview – 
+Different scope in jsp
+In case of multi lingual site whr we shud keep 
+Logging
+
+15. BlackRock – 12Feb, 2015 – F2F
+Telephonic –
+
+1st round –
+What is overloading
+Does Overloading of overridden method is allowed?
+Does Overriding of overloaded method is allowed?
+Can we overload main method?
+How will we identify our main method? Can we swap public and static keywords in main method definition?
+Write a comparator class for Song Class sorted by title and artist
+Wrapper class. Need of that?
+Ex of method hiding using private and static method
+Diff bw final and finalze? Can we not initialize final var.
+Static class. Y an outer class cnt b static?
+Synchronize static method.
+Difference b/w throw and throws. Hierarchy of Exception. 
+Y Map is not a part of Collection interface
+Difference b/w BeanFactory and ApplicationContext
+Volatile var 
+Generic type check at compile time or at run time
+Equals and hashcode. HashMap working?
+Hibernate many to many mapping
+If we create 2 beans of same class. Wht will b default scope? Is it possible to hv 2 diff obj of same class
+Need to remove a column
+Difference bw drop, delete, truncate
+Max 2nd salary without top
+Unix command to change the file permission 	
+
+2nd round –
+Out of an array choose pair of 2 values, whose sum is equal to a given no. (m).  With least complexity
+Sort stack with least complexity
+Y Hibernate is useful in place of JDBC
+Flow of hibernate
+Difference bw struts and spring. Uses of spring.
+Type of transactional
+Table Mapping in hibernate. Generator.
+
+3rd round-
+Brief discussion about project.
+How will we insert element at 3rd position in a linked list
+Difference b/w stack and queue. Java obj impemets the both
+Types of sorting. Explain merge sort.
+Architecture of my application.
+Waterfall model phases.
