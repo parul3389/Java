@@ -28,6 +28,6 @@ Dis - 1. Can't identify data cycles
 2. Mark Sweep - Traverse all refernces and mark all live objects, and delete and maintain address of all free memory
 Adv 1. Can identify data cycles
 Dis - 1. Stop all
-      2. Data fragmentation required, otherwise it will throw OutOfMemory 
+      2. Data fragmentation required, otherwise it will throw OutOfMemory even though memory is available in small chunks
 3. Mark Sweep Compact - 
 4. Mark Sweep Copy -
