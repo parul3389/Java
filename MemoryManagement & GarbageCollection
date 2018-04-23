@@ -1,0 +1,56 @@
+Object Life Cycle -
+1. Created
+2. In use
+3. Not anymore required, can be deleted
+
+Memory in JVM
+1. Heap - Any Objects
+2. Stack - local var., parameters, function calls
+3. Permanent - class level var, loads class n interface str.
+4. Prog registers - hold currently runnig step
+
+Stack and Heap -
+1. Type of var.
+2. Size of stack is very small comapre to heap
+3. StackOverFlowError is for Stack, while OutOfMemoryError is for Heap
+4. Stack is private memory, accessible only to its thread, while heap is accessible to all
+
+Heap Structure-
+1. Young generation - Eden + 2 survivors - all new objects eden & then move to any of survivor area by minor GC
+2. Old generation - After surviving multiple Major GCs survivor objects move to old gen 
+3. Perm gen
+
+Garbage Collection Algorithm-
+1. Refernce Count - Each obj has count of ref. using it, 
+Dis - 1. Can't identify data cycles
+2. Mark Sweep - Traverse all refernces and mark all live objects, and delete and maintain address of all free memory
+Adv 1. Can identify data cycles
+Dis - 1. Stop d world
+      2. Data defragmentation required, otherwise it will throw OutOfMemory even though memory is available in small chunks
+3. Mark Sweep Compact - Traverse all refernces and mark all live objects, and compact all alive objects
+Adv - 1. No defregmentation required
+Dis - 1. Still stop d world
+4. Mark Sweep Copy - Traverse all refernces and mark all live objects, and copy live objects in other part of memory
+Adv - 1. No defregmentation required
+Dis - 1. Still stop d world
+      2. More memory required
+      
+Garbage Collection Type -
+1. Serial GC - One thread will do mark and sweep one after other.
+2. Parallel GC - Useful for multi core processor, one will mark and other will sweep
+3. Concurrent GC - It attempts to minimize the pauses due to garbage collection by doing most of the garbage collection work 
+concurrently with the application threads. It uses the parallel stop-the-world mark-copy algorithm in the Young Generation and the 
+mostly concurrent mark-sweep algorithm in the Old Generation
+4. Garbage First GC - his approach involves segmenting the memory heap into multiple small regions. Each region is marked as either 
+young generation or old generation. G1 keep tracking of the amount of live data that each region contains. This information is used in 
+determining the regions that contain the most garbage; so they are collected first.
+
+Adv of generational memory str -
+eclaim dead objects early in younger generation itself and do not need to scan whole memory everytime to identify dead objects. Older 
+generation objects have already passed some GC cycles so they are assumed to be in system for longer time, so no need to scan them 
+frequently [not perfect case everytime, but mostly It should be].
+
+-Xss Each stack size, -Xms starting size of heap, -Xmx max size of heap, -Xmn size of young generation 
+Till Java 8, we have seen Parallel GC as default garbage collector. Java 9 onwards, G1 is the default garbage collector
+
+Tools used to read memory dump-
