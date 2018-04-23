@@ -45,8 +45,8 @@ mostly concurrent mark-sweep algorithm in the Old Generation
 young generation or old generation. G1 keep tracking of the amount of live data that each region contains. This information is used in 
 determining the regions that contain the most garbage; so they are collected first.
 
-Adv of generational memory str -
-eclaim dead objects early in younger generation itself and do not need to scan whole memory everytime to identify dead objects. Older 
+Adv of generational memory str\ why create new obj in eden memory only -
+Reclaim dead objects early in younger generation itself and do not need to scan whole memory everytime to identify dead objects. Older 
 generation objects have already passed some GC cycles so they are assumed to be in system for longer time, so no need to scan them 
 frequently [not perfect case everytime, but mostly It should be].
 
