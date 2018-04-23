@@ -61,3 +61,6 @@ Reasons -
 2. Memory leaks
 
 Tools used to read memory dump-
+JDK_HOME/bin/jvisualvm.exe
+
+https://howtodoinjava.com/core-java/garbage-collection/all-garbage-collection-algorithms/#gc-algorithms
