@@ -53,4 +53,11 @@ frequently [not perfect case everytime, but mostly It should be].
 -Xss Each stack size, -Xms starting size of heap, -Xmx max size of heap, -Xmn size of young generation 
 Till Java 8, we have seen Parallel GC as default garbage collector. Java 9 onwards, G1 is the default garbage collector
 
+OutOfMemoryError:Perm Gen - Occurs when no more class can be load in perm gen memory.
+OutOfMemoryError:Heap - Occurs when cann't get enough memory to allocate to new obj.
+
+Reasons -
+1. Freagmented memory
+2. Memory leaks
+
 Tools used to read memory dump-
