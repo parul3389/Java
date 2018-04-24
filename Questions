@@ -136,7 +136,7 @@ Round 1 -
 
 18th – Apr – 2018 Macquaire – Telephonic
 Round 1 & 2 – At Macquaire
- Java MCQ and behavioral Questions 
+Java MCQ and behavioral Questions 
 1. Y create object in young generation memory
 2. How to create a immutable class
 3. Usage of immutable class?
@@ -145,6 +145,20 @@ Round 1 & 2 – At Macquaire
 6. Junit
 7. GC complete process and memory management?
 8. spring boot
+Round 4 - 24th Apr
+1. Does abstract classes has constructor? Y? (To create & initialize obj)
+2. What is serialization? Do we call constructor in desearialization? If yes, in which situation?
+3. What one thing volatile ensures? and How? (We created it on a memory accessible from all threads, ie not on stack memory)
+4. producer consumer prob with one integer, not queue?
+5. Sorting algo full code? complexity? fastest sorting algo? Collections.sort use which algo?
+6. Difference b/w Runnable and Callable?
+7. Closable interface? What is Autoclosable interface?
+8. What happens if we don't shutdown a executorService. (MemoryLeak)
+9. Design Patterns - FileIO - Decorator Pattern
+10. How ConcurrentHashMap and HashMap works? 2 dataStructure used? (ArrayList, Deque - O(n) in search and O(i) insert, after 1000 or so 
+it will be replaced by BST or self balanced tree as it has serach and insert of o(log n)).
+11. Thread 1 writting in segment1 and Thread 2 reading from segment 1, How it is allowed?
+12. Atomic var?
 
 Oracle - 19Apr-2018 - F2F
 Round 1
@@ -190,6 +204,15 @@ Round 2
 1. Why should we use Design patterns?
 2. What is Quadrant scheduler
 3. Atomic and volatile var ?
+
+24Apr-2018 - UHG - Telephonic
+1. Define Exector framework?
+2. Internal classes? usage? Annonymous class? can we use annonymous to create obj of abstract class or interface? code? On compilation,
+what will be name of inner class?
+3. nested Interface? can we write class in interface? what exception will I get? Can we access it directly without main interface?
+4. WeakHashMap and IdentityHashMap?
+5. Filters in angular js
+6. How can we maintain 2-way var in angular (ng-model)
 
 Extras - 
 1.	Non sql data base like mongodb, cassandera
