@@ -1,0 +1,7 @@
+Instance Variables: These variables are serialized, so during deserialization we will get back the serialized state.
+
+Static Variables: These variables are not serialized, So during deserialization static variable value will loaded from the class.(Current value will be loaded.)
+
+transient Variables: transient variables are not serialized, so during deserialization those variables will be initialized with corresponding default values (ex: for objects null, int 0).
+
+Super class variables: If super class also implemented Serializable interface then those variables will be serialized, otherwise it won't serialize the super class variables. and while deserializing, JVM will run default constructor in super class and populates the default values. Same thing will happen for all superclasses.
