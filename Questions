@@ -159,6 +159,13 @@ Round 4 - 24th Apr
 it will be replaced by BST or self balanced tree as it has serach and insert of o(log n)).
 11. Thread 1 writting in segment1 and Thread 2 reading from segment 1, How it is allowed?
 12. Atomic var?
+Round 5 - 27th April
+1. Tell me about urself?
+2. What u like most about BR? What do you want to change about blackrock?
+3. your strength and weakness in last assisment?
+4. How BR earns money?
+5. How share market works and how we earn profit?
+6. Describe ur any of ur project and ur responsibility in same
 
 Oracle - 19Apr-2018 - F2F
 Round 1
@@ -174,7 +181,6 @@ Round 1
 10. Difference between Controller and RestController
 11. How to print a Hello message on browser using spring. Expain complete steps.
 12. How a request genreated from a browser get serverd by app server
-
 Round 2
 1.  Expain AOP. How to call a AOP in mid of a method
 2. Implement ThreadPool
@@ -199,7 +205,6 @@ Round 1
 8. Different type of Dependency injection in spring? Which one is default?
 9. Life cycle of a request in spring?
 10. Different ways to create obj (4 – new, de-serialize, class.forName, clone)
-
 Round 2
 1. Why should we use Design patterns?
 2. What is Quadrant scheduler
@@ -213,6 +218,44 @@ what will be name of inner class?
 4. WeakHashMap and IdentityHashMap?
 5. Filters in angular js
 6. How can we maintain 2-way var in angular (ng-model)
+
+28thApr-2018 - Global Logic 
+Round 1 -
+1. Define OOPs concepts and principles
+2. Diff b/w encapsulation and abstraction
+3. How concurrent hashMap works? fail-safe and fail-fast? how it maintains copy on updation? how multiThreading allowed? Diff b/w 
+concurrent and synchronized hashMap?
+4. Executor services? diff types of threadpools?
+5. CountDownLatch usage and how it works?
+6. Code to reverse a linklist
+7. Ways to create obj in js
+8. Diff types of scope in a directive?
+Round 2 -
+1. Write code to count frequency of every char in a given string
+2. Write code to generate all possible substring of a given string
+3. private method m1, in parent class A
+	A a = new B();
+	a.m1();
+   Ans : method not visible
+4. enum defined outside class, inside class, inside class method
+   Ans: Can't declare inside a method
+5. How to stop a thread?
+Round 3 - 
+1. class A {
+	 hashcode return -1;
+	 equals return false;
+	}
+What will happen on insertion and retrieval from hashMap?
+map.get(A1, 1)
+map.get(A2, 1)
+map.get(A1, 2)
+Ans : Out of suprise, it will insert and retrive values without any issue, reason is internally has map also check for ref, this 
+will takes care on equals part.
+2. 100 Km distance, one side bird 50 km/hr, and opposite side a train 25 km\h. They collide and bird revert in and move towards and its
+starting point, after reaching start point it again to fly towards train. This will be repeated untill train reaches to other end.
+How much time bird flew?
+Ans. Time bird flew and train reached to starting point is same, so 100/25 = 4 hours
+3. Usage of generics? does .class with and without generic will be same?
 
 Extras - 
 1.	Non sql data base like mongodb, cassandera
