@@ -159,7 +159,27 @@ Round 4 - 24th Apr
 it will be replaced by BST or self balanced tree as it has serach and insert of o(log n)).
 11. Thread 1 writting in segment1 and Thread 2 reading from segment 1, How it is allowed?
 12. Atomic var?
-Round 5 - 27th April
+Round 5 - 
+1. Write singleton class
+class A{
+	static private A a;
+	private A(){};
+	static public factory{
+		if(a == null){
+			synchronized(A.class){
+				if(a == null){
+					a = new A();
+				}
+			}
+		}
+		return a;
+	}
+}
+2. Table Team(TeamName), Write all team pairing, but only one
+	select a.TeamName, b.teamName	
+	from Team a, Team b
+	where a.TeamName<b.TeamName
+Round 6 - 27th April
 1. Tell me about urself?
 2. What u like most about BR? What do you want to change about blackrock?
 3. your strength and weakness in last assisment?
@@ -256,6 +276,7 @@ starting point, after reaching start point it again to fly towards train. This w
 How much time bird flew?
 Ans. Time bird flew and train reached to starting point is same, so 100/25 = 4 hours
 3. Usage of generics? does .class with and without generic will be same?
+4. Usage of Constant pool.
 
 Extras - 
 1.	Non sql data base like mongodb, cassandera
