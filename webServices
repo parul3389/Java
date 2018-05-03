@@ -1,3 +1,19 @@
+1. SOAP uses only XML as input and outpust, REST supports CSV, JSON
+2. SOAP is a std protocol
+3. SOAP is a envelop and REST is postcard
+4. SOAP has inbuilt error handling
+5. REST HTTP requests are: POST, GET, PUT, and DELETE. SoapUI supports HEAD, OPTIONS, TRACE and PATCH requests as well
+6. REST small learning curve
+
+
+This code uses Spring 4’s new @RestController annotation, which marks the class as a controller where every method returns a domain 
+object instead of a view. It’s shorthand for @Controller and @ResponseBody rolled together.
+
+A key difference between a traditional MVC controller and the RESTful web service controller above is the way that the HTTP response 
+body is created. Rather than relying on a view technology to perform server-side rendering of the greeting data to HTML, this RESTful 
+web service controller simply populates and returns a Greeting object. The object data will be written directly to the HTTP response as 
+JSON.
+
 Create Http call in java - 
 
 Class<T> returnObjectClass = new ParameterizedTypeReference<Map<Integer, List<AsOfDate>>>() {};
