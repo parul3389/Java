@@ -49,6 +49,7 @@ Statement 1 will be executed by which thread?
 11.	How to represent one table in 2 hibernate classes like class B extends A
 
 9-Apr-2018 -mphrx – Telephonic - Easy
+Round 1
 1.	What is difference between Path and Classpath?
 2.	Can we have java file with multiple public class, No, What happened?
 3.	If there are 5 class in a java file, what will happen on compile
@@ -60,6 +61,18 @@ Statement 1 will be executed by which thread?
 9.	A is singleton, B is prototype,  B has A, let us call B 5 times, how many beans of A & B will be created?
 10.	There are 8 coins, one is a bit heavier and a weighing balance. How many times we need to weigh to identify 
 heavier coin – Max 3 times (Divide 4-4)-   Max 2 times (Divide 3-3-2, now weigh 3 and 3)
+Round 2 -
+1. Design game for Snake n Ladders.
+2. How can you write push, pop and minimum val with O(1) complexity. (Hint : maintain a parallel stack with min value at each level\
+element).
+3. How to show exact time in sync with server machine. Keeping in mind client has its own 
+Round 3-
+Round 4-
+1. Write singleton class code. Is first null check required? what happed, if remove 2nd null check?
+2. In a servlet init method, there is a counter, initializing it with zero. Should it be static. (Hint : No)
+3. there is count++ statement in servlet service method. Should it be synchronize? Y? (Hint : Yes, because it is not compiler level 
+atomic, during compilation each statement break down at compiler level atomic)
+Round 5-
 
 13th April – GapTech  -  Video 
 Round 1 – 
@@ -277,6 +290,47 @@ How much time bird flew?
 Ans. Time bird flew and train reached to starting point is same, so 100/25 = 4 hours
 3. Usage of generics? does .class with and without generic will be same?
 4. Usage of Constant pool.
+
+Cognizant - 5th May 2018
+Round 1 - 
+1. Expain your project architecture?
+2. 
+Round 2 - 
+1. 
+Round 3 - 
+1. Diff ways to secure a web service calls?
+2. How can we allow/block a certain set of address in web services?
+3. Why lamda exp is procedure driven?
+
+Sapient - 8-May-2018
+Round 1 - Coding Ex.
+Write an code for a firm, which calculate Avg Income of Country in USD. 
+Steps - 
+1. Read input file, can be csv, excel, xml or any other
+2. Convert from given currency to USD on provided Rate
+3. Calulate country/ City(in case country not given) avg Income on Gender wise
+4. Output order should be Country, Gender, desc of avg income in cvs file again
+Points carried marks - Design Approach, Data str. used, test cases
+Input csv file - city, country, Gender, Avg Income
+Output csv file - country/City, Gender, Avg Income
+
+Round 2 - Technical
+1. n+1 problem of hibernate
+2. why we cann't insert null in concurrent hashmap?
+3. If we hv at max 2 threads in a given program. How to define concurrent hashmap for such situation? (Hint : 2 segments) 
+4. class A{
+	private String x;	
+}
+class B extends A{
+	
+}
+How to intialize x while creating obj of B in xml.
+5. Spring Beans scopes?
+6. How much exp have in diff technologies?
+
+Behavioural questions link
+
+
 
 Extras - 
 1.	Non sql data base like mongodb, cassandera
